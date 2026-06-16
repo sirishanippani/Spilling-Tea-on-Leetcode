@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&family=Mynerve&family=Fira+Code:wght@400;550&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Mynerve", cursive, sans-serif;
+  --font-display: "Mansalva", cursive, sans-serif;
+  --font-mono: "Fira Code", monospace;
+  --font-writing: "Mynerve", cursive, sans-serif;
+
+  --color-powder-petal: #efd9ce;
+  --color-mauve: #dec0f1;
+  --color-wisteria: #b79ced;
+  --color-soft-periwinkle: #957fef;
+  --color-medium-slate-blue: #7161ef;
+
+  --color-dark-amethyst: #191939;
+  --color-dusty-grape: #5e548e;
+  --color-amethyst-smoke: #9f86c0;
+  --color-lilac: #be95c4;
+  --color-pink-orchid: #e0b1cb;
+  
+  --color-plum: #f7aef8;
+  --color-bright-lavender: #b388eb;
+  --color-wisteria-blue: #8093f1;
+  --color-sky-blue-light: #72ddf7;
+}
+
+/* Base comfortable letter spacing and line heights for a beautiful, spacious feel */
+html, body {
+  letter-spacing: 0.05em;
+  line-height: 1.65;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.05em !important;
+}
+
+button, input, textarea, select {
+  letter-spacing: 0.04em !important;
+}
+
+/* Custom subtle scrollbars for lists */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.2);
+  border-radius: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.4);
+}
+
+/* Cosmic Twinkle Effects */
+@keyframes slow-twinkle {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(0.85);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.15);
+  }
+}
+
+.animate-twinkle {
+  animation: slow-twinkle 5s ease-in-out infinite;
+}
+
+/* Authentic subtle graph paper layout backing */
+.bg-grid-paper {
+  background-size: 26px 26px;
+  background-image: 
+    linear-gradient(to right, rgba(25, 25, 57, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(25, 25, 57, 0.04) 1px, transparent 1px);
+}
+
+.dark .bg-grid-paper {
+  background-size: 26px 26px;
+  background-image: 
+    linear-gradient(to right, rgba(220, 200, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(220, 200, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Custom range inputs style overrides */
+input[type="range"]::-webkit-slider-thumb {
+  background-color: #7161ef;
+  border-radius: 9999px;
+  height: 14px;
+  width: 14px;
+}
+
+

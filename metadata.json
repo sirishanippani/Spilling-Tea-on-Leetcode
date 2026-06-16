@@ -1,0 +1,6 @@
+{
+  "name": "Cosmic Study Journal",
+  "description": "An elegant, minimalist astrophysical study notebook and stargazing log to track celestial code observations and continuous growth.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
